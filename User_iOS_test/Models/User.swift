@@ -7,7 +7,19 @@
 
 import Foundation
 
-struct User: Codable {
+struct UserContainer: Codable {
+  let page: Int
+  let totalPages: Int
+  let users: [User]
+  
+  enum CodingKeys: String, CodingKey {
+    case page
+    case totalPages = "total_pages"
+    case users = "data"
+  }
+}
+
+struct User: Codable, Equatable {
   let id: Int
   let email, firstName, lastName: String
   let avatar: String
@@ -25,6 +37,10 @@ struct User: Codable {
   
   static func testUser() -> User {
     return User(id: 11, email: "anirudha@gmail.com", firstName: "Anirudha", lastName: "Mahale", avatar: "https://reqres.in/img/faces/1-image.jpg")
+  }
+  
+  static func ==(lhs: User, rhs: User) -> Bool {
+    return lhs.id == rhs.id
   }
 }
 

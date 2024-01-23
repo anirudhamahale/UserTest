@@ -21,14 +21,24 @@ class UsersViewModel: ObservableObject {
 		self.users = []
 	}
 	
-	func loadUsers() {
-		service.getUsers()
+	var currentPage = 1
+	var totalPages = 0
+	
+	func loadUsers(currentPage: Int = 1) {
+		service.getUsers(page: currentPage)
 			.sink { completion in
 				print(completion)
-			} receiveValue: { users in
-				self.users.append(contentsOf: users)
+			} receiveValue: { data in
+				self.totalPages = data.totalPages
+				self.users.append(contentsOf: data.users)
+				self.currentPage += 1
 			}.store(in: &subscriptions)
-
+	}
+	
+	func loadRemaining() {
+		// Checking if more pages are to be loaded else just return.
+		guard currentPage <= totalPages else { return }
+		loadUsers(currentPage: currentPage)
 	}
 	
 }

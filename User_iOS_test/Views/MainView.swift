@@ -13,9 +13,15 @@ struct MainView: View {
   
   var body: some View {
     VStack {
-      List(viewModel.users, id: \.id) { user in
+      let users = viewModel.users
+      List(users, id: \.id) { user in
         UserView(user: user)
-      }.listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+          .onAppear {
+            if user.id == users.last?.id {
+              viewModel.loadRemaining()
+            }
+          }
+      }
     }
     .onAppear {
       viewModel.loadUsers()
@@ -26,3 +32,4 @@ struct MainView: View {
 #Preview {
   MainView()
 }
+

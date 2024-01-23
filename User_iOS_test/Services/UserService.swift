@@ -9,18 +9,17 @@ import Foundation
 import Combine
 
 protocol UserServiceInterface {
-  func getUsers() -> AnyPublisher<[User], Error>
+  func getUsers(page: Int) -> AnyPublisher<UserContainer, Error>
 }
 
 class UserService: BaseNetworkManager, UserServiceInterface {
   
   private let decoder = JSONDecoder()
   
-  func getUsers() -> AnyPublisher<[User], Error> {
-    get(url: URL(string: "https://reqres.in/api/users")!)
+  func getUsers(page: Int) -> AnyPublisher<UserContainer, Error> {
+    get(url: URL(string: "https://reqres.in/api/users?page=\(page)")!)
       .map { $0.0 }
-      .decode(type: ListResponse<User>.self, decoder: decoder)
-      .map { $0.data }
+      .decode(type: UserContainer.self, decoder: decoder)
       .receive(on: RunLoop.main)
       .eraseToAnyPublisher()
   }
