@@ -23,11 +23,14 @@ class UsersViewModel: ObservableObject {
 	
 	var currentPage = 1
 	var totalPages = 0
+	var isLoading = false
 	
 	func loadUsers(currentPage: Int = 1) {
+		isLoading = true
 		service.getUsers(page: currentPage)
 			.sink { completion in
 				print(completion)
+				self.isLoading = false
 			} receiveValue: { data in
 				self.totalPages = data.totalPages
 				self.users.append(contentsOf: data.users)

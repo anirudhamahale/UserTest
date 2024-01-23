@@ -18,6 +18,7 @@
 		271FD4792B5FCE1900240F9E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FD4782B5FCE1900240F9E /* UserService.swift */; };
 		271FD47B2B5FCE8700240F9E /* BaseNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FD47A2B5FCE8700240F9E /* BaseNetworkManager.swift */; };
 		271FD4822B5FD01D00240F9E /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FD4812B5FD01D00240F9E /* UsersViewModel.swift */; };
+		271FD4842B5FDB2700240F9E /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FD4832B5FDB2700240F9E /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		271FD4782B5FCE1900240F9E /* UserService.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; tabWidth = 2; };
 		271FD47A2B5FCE8700240F9E /* BaseNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkManager.swift; sourceTree = "<group>"; };
 		271FD4812B5FD01D00240F9E /* UsersViewModel.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		271FD4832B5FDB2700240F9E /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				271FD4602B5FB96800240F9E /* MainView.swift */,
 				271FD4702B5FBAA400240F9E /* UserView.swift */,
 				271FD4732B5FC74900240F9E /* RemoteImageView.swift */,
+				271FD4832B5FDB2700240F9E /* ActivityIndicator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				271FD47B2B5FCE8700240F9E /* BaseNetworkManager.swift in Sources */,
 				271FD46E2B5FBA5F00240F9E /* User.swift in Sources */,
 				271FD4742B5FC74900240F9E /* RemoteImageView.swift in Sources */,
+				271FD4842B5FDB2700240F9E /* ActivityIndicator.swift in Sources */,
 				271FD4762B5FC79300240F9E /* CacheManager.swift in Sources */,
 				271FD4712B5FBAA400240F9E /* UserView.swift in Sources */,
 				271FD4822B5FD01D00240F9E /* UsersViewModel.swift in Sources */,

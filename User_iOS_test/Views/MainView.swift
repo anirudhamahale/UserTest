@@ -21,6 +21,14 @@ struct MainView: View {
               viewModel.loadRemaining()
             }
           }
+        
+        if user.id == users.last?.id && viewModel.isLoading {
+          HStack {
+            Spacer()
+            ActivityIndicator(isAnimating: $viewModel.isLoading)
+            Spacer()
+          }
+        }
       }
     }
     .onAppear {
