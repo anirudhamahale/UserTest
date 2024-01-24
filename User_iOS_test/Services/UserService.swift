@@ -9,6 +9,10 @@ import Foundation
 import Combine
 
 protocol UserServiceInterface {
+  
+  /// Retrives list of users  present at the current page
+  /// - Parameter page: Page index you want to fetch
+  /// - Returns: 
   func getUsers(page: Int) -> AnyPublisher<UserContainer, Error>
 }
 

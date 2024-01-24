@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct User_iOS_testApp: App {
-    var body: some Scene {
-        WindowGroup {
-            MainView()
-        }
+    
+  var body: some Scene {
+    WindowGroup {
+      MainView()
     }
+  }
 }

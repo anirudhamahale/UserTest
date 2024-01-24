@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		271FD45F2B5FB96800240F9E /* User_iOS_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FD45E2B5FB96800240F9E /* User_iOS_testApp.swift */; };
 		271FD4612B5FB96800240F9E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FD4602B5FB96800240F9E /* MainView.swift */; };
 		271FD4632B5FB96900240F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271FD4622B5FB96900240F9E /* Assets.xcassets */; };
 		271FD4662B5FB96900240F9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271FD4652B5FB96900240F9E /* Preview Assets.xcassets */; };
@@ -19,22 +18,30 @@
 		271FD47B2B5FCE8700240F9E /* BaseNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FD47A2B5FCE8700240F9E /* BaseNetworkManager.swift */; };
 		271FD4822B5FD01D00240F9E /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FD4812B5FD01D00240F9E /* UsersViewModel.swift */; };
 		271FD4842B5FDB2700240F9E /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FD4832B5FDB2700240F9E /* ActivityIndicator.swift */; };
+		271FD4862B5FDD2900240F9E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FD4852B5FDD2900240F9E /* DetailView.swift */; };
+		27A085DA2B60E80300F3A254 /* ApplicationCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A085D92B60E80300F3A254 /* ApplicationCounter.swift */; };
+		27A085DC2B60EB7700F3A254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A085DB2B60EB7700F3A254 /* AppDelegate.swift */; };
+		27A085DE2B60ED6900F3A254 /* User_iOS_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A085DD2B60ED6900F3A254 /* User_iOS_testApp.swift */; };
+		27A085E12B610B6200F3A254 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 27A085E02B610B6200F3A254 /* CachedAsyncImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		271FD45B2B5FB96800240F9E /* User_iOS_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = User_iOS_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		271FD45E2B5FB96800240F9E /* User_iOS_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User_iOS_testApp.swift; sourceTree = "<group>"; };
 		271FD4602B5FB96800240F9E /* MainView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		271FD4622B5FB96900240F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271FD4652B5FB96900240F9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		271FD46D2B5FBA5F00240F9E /* User.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; tabWidth = 2; };
 		271FD4702B5FBAA400240F9E /* UserView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; tabWidth = 2; };
-		271FD4732B5FC74900240F9E /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		271FD4732B5FC74900240F9E /* RemoteImageView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		271FD4752B5FC79300240F9E /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		271FD4782B5FCE1900240F9E /* UserService.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; tabWidth = 2; };
 		271FD47A2B5FCE8700240F9E /* BaseNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkManager.swift; sourceTree = "<group>"; };
 		271FD4812B5FD01D00240F9E /* UsersViewModel.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
 		271FD4832B5FDB2700240F9E /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		271FD4852B5FDD2900240F9E /* DetailView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; tabWidth = 2; };
+		27A085D92B60E80300F3A254 /* ApplicationCounter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ApplicationCounter.swift; sourceTree = "<group>"; tabWidth = 2; };
+		27A085DB2B60EB7700F3A254 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
+		27A085DD2B60ED6900F3A254 /* User_iOS_testApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User_iOS_testApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A085E12B610B6200F3A254 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,13 +75,14 @@
 		271FD45D2B5FB96800240F9E /* User_iOS_test */ = {
 			isa = PBXGroup;
 			children = (
-				271FD45E2B5FB96800240F9E /* User_iOS_testApp.swift */,
+				27A085DB2B60EB7700F3A254 /* AppDelegate.swift */,
+				27A085DD2B60ED6900F3A254 /* User_iOS_testApp.swift */,
 				271FD47E2B5FCFFE00240F9E /* ViewModel */,
 				271FD4772B5FCE0800240F9E /* Services */,
 				271FD46F2B5FBA9400240F9E /* Views */,
 				271FD46C2B5FBA5600240F9E /* Models */,
-				271FD4622B5FB96900240F9E /* Assets.xcassets */,
 				271FD4722B5FC72200240F9E /* Utility */,
+				271FD4622B5FB96900240F9E /* Assets.xcassets */,
 				271FD4642B5FB96900240F9E /* Preview Content */,
 			);
 			path = User_iOS_test;
@@ -102,6 +111,7 @@
 				271FD4702B5FBAA400240F9E /* UserView.swift */,
 				271FD4732B5FC74900240F9E /* RemoteImageView.swift */,
 				271FD4832B5FDB2700240F9E /* ActivityIndicator.swift */,
+				271FD4852B5FDD2900240F9E /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				271FD4752B5FC79300240F9E /* CacheManager.swift */,
+				27A085D92B60E80300F3A254 /* ApplicationCounter.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -147,6 +158,9 @@
 			dependencies = (
 			);
 			name = User_iOS_test;
+			packageProductDependencies = (
+				27A085E02B610B6200F3A254 /* CachedAsyncImage */,
+			);
 			productName = User_iOS_test;
 			productReference = 271FD45B2B5FB96800240F9E /* User_iOS_test.app */;
 			productType = "com.apple.product-type.application";
@@ -175,6 +189,9 @@
 				Base,
 			);
 			mainGroup = 271FD4522B5FB96800240F9E;
+			packageReferences = (
+				27A085DF2B610B6200F3A254 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = 271FD45C2B5FB96800240F9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,10 +220,13 @@
 			files = (
 				271FD4792B5FCE1900240F9E /* UserService.swift in Sources */,
 				271FD4612B5FB96800240F9E /* MainView.swift in Sources */,
-				271FD45F2B5FB96800240F9E /* User_iOS_testApp.swift in Sources */,
+				27A085DA2B60E80300F3A254 /* ApplicationCounter.swift in Sources */,
 				271FD47B2B5FCE8700240F9E /* BaseNetworkManager.swift in Sources */,
 				271FD46E2B5FBA5F00240F9E /* User.swift in Sources */,
+				271FD4862B5FDD2900240F9E /* DetailView.swift in Sources */,
 				271FD4742B5FC74900240F9E /* RemoteImageView.swift in Sources */,
+				27A085DC2B60EB7700F3A254 /* AppDelegate.swift in Sources */,
+				27A085DE2B60ED6900F3A254 /* User_iOS_testApp.swift in Sources */,
 				271FD4842B5FDB2700240F9E /* ActivityIndicator.swift in Sources */,
 				271FD4762B5FC79300240F9E /* CacheManager.swift in Sources */,
 				271FD4712B5FBAA400240F9E /* UserView.swift in Sources */,
@@ -416,6 +436,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27A085DF2B610B6200F3A254 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27A085E02B610B6200F3A254 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27A085DF2B610B6200F3A254 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 271FD4532B5FB96800240F9E /* Project object */;
 }

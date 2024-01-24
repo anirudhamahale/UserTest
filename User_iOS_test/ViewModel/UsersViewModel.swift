@@ -24,12 +24,16 @@ class UsersViewModel: ObservableObject {
 	var currentPage = 1
 	var totalPages = 0
 	var isLoading = false
+	var error: Error?
 	
+	// loads the user a current page. By default it will load page 1.
 	func loadUsers(currentPage: Int = 1) {
 		isLoading = true
 		service.getUsers(page: currentPage)
 			.sink { completion in
-				print(completion)
+				if case let .failure(error) = completion {
+					self.error = error
+				}
 				self.isLoading = false
 			} receiveValue: { data in
 				self.totalPages = data.totalPages
@@ -38,10 +42,10 @@ class UsersViewModel: ObservableObject {
 			}.store(in: &subscriptions)
 	}
 	
+	// Loads the remaining pages.
 	func loadRemaining() {
 		// Checking if more pages are to be loaded else just return.
 		guard currentPage <= totalPages else { return }
 		loadUsers(currentPage: currentPage)
 	}
-	
 }

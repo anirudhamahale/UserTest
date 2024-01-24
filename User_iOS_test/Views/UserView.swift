@@ -10,6 +10,7 @@ import SwiftUI
 struct UserView: View {
   
   let user: User
+  @State var showSheetView = false
   
   var body: some View {
     HStack(alignment: .center, spacing: 16) {
@@ -28,6 +29,14 @@ struct UserView: View {
     }.padding()
       .background(Color.gray.opacity(0.1))
       .cornerRadius(8)
+      .onTapGesture {
+        showSheetView.toggle()
+      }
+      .sheet(isPresented: $showSheetView, content: {
+        DetailView(user: user)
+          // .frame(maxWidth: .infinity, maxHeight: .infinity)
+      })
+      
   }
 }
 

@@ -9,6 +9,9 @@ import Foundation
 
 class CacheManager {
     
+    // Marking the init private in order to prevent creation of object.
+    private init() { }
+    
     private let cache = NSCache<NSURL, NSData>()
     
     static let shared = CacheManager()
