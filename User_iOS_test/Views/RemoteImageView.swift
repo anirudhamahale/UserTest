@@ -16,8 +16,12 @@ struct RemoteImageView: View {
   
   var body: some View {
     if let url = url {
-      let urlRequst = URLRequest(url: url)
-      CachedAsyncImage(urlRequest: urlRequst, urlCache: .shared)
+      CachedAsyncImage(url: url) { image in
+          image
+            .resizable()
+        } placeholder: {
+          placeholder
+        }
     } else if let placeholder = placeholder {
       placeholder
         .resizable()
